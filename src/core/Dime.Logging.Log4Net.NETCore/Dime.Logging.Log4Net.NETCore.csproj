@@ -9,10 +9,9 @@
 
   <PropertyGroup>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;</TargetFrameworks>
     <AssemblyName>Dime.Logging.Log4Net.NETCore</AssemblyName>
     <PackageId>Dime.Logging.Log4Net.NETCore</PackageId>
-    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">1.1.1</RuntimeFrameworkVersion>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -23,7 +22,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Log4Net Logger</Description>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
-    <Copyright>Copyright ©  2017</Copyright>
+    <Copyright>Copyright © 2017</Copyright>
     <AssemblyVersion>1.0.2.3</AssemblyVersion>
     <FileVersion>1.0.2.3</FileVersion>
   </PropertyGroup>
@@ -36,11 +35,4 @@
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.0.2" />
   </ItemGroup>
-
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
 </Project>
