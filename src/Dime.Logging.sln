@@ -1,19 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Logging", "core\Dime.Logging\Dime.Logging.csproj", "{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging", "core\Dime.Logging\Dime.Logging.csproj", "{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0A069962-3419-4F89-9C24-66E576415395}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Logging.UnitTest", "test\Dime.Logging.Tests\Dime.Logging.UnitTest.csproj", "{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Logging.Log4net", "core\Dime.Logging.Log4net\Dime.Logging.Log4net.csproj", "{55AE1B0F-1793-4335-90A3-495D2957FA3F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging.Log4Net.NETCore", "core\Dime.Logging.Log4Net.NETCore\Dime.Logging.Log4Net.NETCore.csproj", "{AC69E984-40FE-480B-A0A6-33C65C98ECC9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging.NETCore", "core\Dime.Logging.NETCore\Dime.Logging.NETCore.csproj", "{E0181038-5E2B-4873-8A2C-814A9B733976}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging.Log4net", "core\Dime.Logging.Log4net\Dime.Logging.Log4net.csproj", "{55AE1B0F-1793-4335-90A3-495D2957FA3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,52 +15,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
-		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Azure|Any CPU.Build.0 = Azure|Any CPU
+		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Azure|Any CPU.ActiveCfg = Release|Any CPU
+		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Azure|Any CPU.Build.0 = Release|Any CPU
 		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
-		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.NuGet|Any CPU.ActiveCfg = Release|Any CPU
+		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.NuGet|Any CPU.Build.0 = Release|Any CPU
 		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80D4BDFF-CD81-4ECA-BB68-6A331074D5C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.Azure|Any CPU.Build.0 = Azure|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Azure|Any CPU.ActiveCfg = NuGet|Any CPU
-		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Azure|Any CPU.Build.0 = NuGet|Any CPU
+		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Azure|Any CPU.ActiveCfg = Release|Any CPU
+		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Azure|Any CPU.Build.0 = Release|Any CPU
 		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
-		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
+		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.NuGet|Any CPU.ActiveCfg = Release|Any CPU
+		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.NuGet|Any CPU.Build.0 = Release|Any CPU
 		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55AE1B0F-1793-4335-90A3-495D2957FA3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.Azure|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.Azure|Any CPU.Build.0 = Debug|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.NuGet|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.NuGet|Any CPU.Build.0 = Debug|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC69E984-40FE-480B-A0A6-33C65C98ECC9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.Azure|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.Azure|Any CPU.Build.0 = Debug|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.NuGet|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.NuGet|Any CPU.Build.0 = Debug|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0181038-5E2B-4873-8A2C-814A9B733976}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F566527A-E774-4FDD-BB2A-BCC7A7A9D557} = {0A069962-3419-4F89-9C24-66E576415395}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78B5508B-59D6-4DA8-92A5-DA92AC038AAA}

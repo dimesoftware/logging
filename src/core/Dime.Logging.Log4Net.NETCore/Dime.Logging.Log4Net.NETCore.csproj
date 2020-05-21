@@ -28,10 +28,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dime.Logging.NETCore\Dime.Logging.NETCore.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.0.2" />
   </ItemGroup>

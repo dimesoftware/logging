@@ -28,13 +28,8 @@
         // Create a new file appender
         public static IAppender CreateFileAppender(string name, string fileName)
         {
-            FileAppender appender = new FileAppender();
-            appender.Name = name;
-            appender.File = fileName;
-            appender.AppendToFile = true;
-
-            PatternLayout layout = new PatternLayout();
-            layout.ConversionPattern = "%d [%t] %-5p %c [%x] - %m%n";
+            FileAppender appender = new FileAppender { Name = name, File = fileName, AppendToFile = true };
+            PatternLayout layout = new PatternLayout { ConversionPattern = "%d [%t] %-5p %c [%x] - %m%n" };
             layout.ActivateOptions();
 
             appender.Layout = layout;
@@ -44,13 +39,10 @@
         }
 
         // Create a new file appender
-        public static IAppender CreateMultiTenantAppender(string name)
+        public static IAppender CreateAdoNetAppender()
         {
-            MultiTenantAdoNetAppender appender = new MultiTenantAdoNetAppender(name);
-            appender.Name = name;
-
-            PatternLayout layout = new PatternLayout();
-            layout.ConversionPattern = "%d [%t] %-5p %c [%x] - %m%n";
+            AdoNetAppender appender = new AdoNetAppender();
+            PatternLayout layout = new PatternLayout { ConversionPattern = "%d [%t] %-5p %c [%x] - %m%n" };
             layout.ActivateOptions();
 
             appender.Layout = layout;

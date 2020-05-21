@@ -1,144 +1,29 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace Dime.Logging
 {
-    public partial class Logger : ILogger
+    public partial class Logger : ILoggerAsync
     {
-        #region Methods
-
-        /// <summary>
-        /// Logs the debug asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task DebugAsync(string message)
-        {
-            Task logTask = Task.Run(() =>
-            {
-                this.Log.Debug(message);
-            });
-            return logTask;
-        }
+            => Task.Run(() => _log.Debug(message));
 
-        /// <summary>
-        /// Logs the debug asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <param name="ex">The ex.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task DebugAsync(string message, Exception ex)
-        {
-            Task logTask = Task.Run(() =>
-            {
-                this.Log.Debug(message, ex);
-            });
-            return logTask;
-        }
+            => Task.Run(() => _log.Debug(message, ex));
 
-        /// <summary>
-        /// Logs the information asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task InformationAsync(string message)
-        {
-            Task logTask = Task.Run(() =>
-           {
-               this.Log.Info(message);
-           });
+            => Task.Run(() => _log.Info(message));
 
-            return logTask;
-        }
-
-        /// <summary>
-        /// Logs the warning asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task WarningAsync(string message)
-        {
-            Task logTask = Task.Run(() =>
-            {
-                this.Log.Warn(message);
-            });
-            return logTask;
-        }
+            => Task.Run(() => _log.Warn(message));
 
-        /// <summary>
-        /// Logs the warning asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <param name="ex">The ex.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task WarningAsync(string message, Exception ex)
-        {
-            Task logTask = Task.Run(() =>
-            {
-                this.Log.Warn(message, ex);
-            });
-            return logTask;
-        }
+            => Task.Run(() => _log.Warn(message, ex));
 
-        /// <summary>
-        /// Logs the exception asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <param name="ex">The ex.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task ExceptionAsync(string message, Exception ex)
-        {
-            Task logTask = Task.Run(() =>
-            {
-                this.Log.Error(message, ex);
-            });
-            return logTask;
-        }
+            => Task.Run(() => _log.Error(message, ex));
 
-        /// <summary>
-        /// Logs the fatal exception asynchronous.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <param name="ex">The ex.</param>
-        /// <returns></returns>
-        /// <history>
-        /// [HB] 13/09/2015 - Create
-        /// </history>
-        [DebuggerStepThrough()]
         public Task FatalAsync(string message, Exception ex)
-        {
-            Task logTask = Task.Run(() =>
-            {
-                this.Log.Fatal(message, ex);
-            });
-            return logTask;
-        }
-
-        #endregion Methods
+            => Task.Run(() => _log.Fatal(message, ex));
     }
 }

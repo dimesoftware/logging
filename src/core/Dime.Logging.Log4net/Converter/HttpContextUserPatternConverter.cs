@@ -9,12 +9,11 @@ namespace Dime.Logging
     {
         protected override void Convert(TextWriter writer, LoggingEvent loggingEvent)
         {
-            string name = "";
             HttpContext context = HttpContext.Current;
-            if (context != null && context.User != null && context.User.Identity.IsAuthenticated)
-            {
+            
+            string name = "";
+            if (context?.User != null && context.User.Identity.IsAuthenticated) 
                 name = context.User.Identity.Name;
-            }
 
             writer.Write(name);
         }

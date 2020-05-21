@@ -1,20 +1,37 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Introduction
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Dime.Logging is a simple wrapper which abstracts logging implementations from logging definitions.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Getting Started
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- You must have Visual Studio 2019 Community or higher.
+- The dotnet cli is also highly recommended.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## About this project
+
+This repository is split it in several projects. Each one has a very specific focus:
+
+- Dime.Logging: definitions of the `ILogger` and `ILoggerAsync` interfaces.
+- Dime.Logging.Log4Net: implementation of the loggers using Log4Net.
+
+## Build and Test
+
+- Run dotnet restore
+- Run dotnet build
+- Run dotnet test
+
+## Installation
+
+Use the package manager NuGet to install Dime.Logging:
+
+`dotnet add package Dime.Logging.[{SubProjectName}]`
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
