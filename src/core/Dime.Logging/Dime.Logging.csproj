@@ -7,8 +7,8 @@
     <Product>Dime.Logging</Product>
     <Description>Logging framework for Dime</Description>
     <Copyright>Copyright © 2020</Copyright>
-    <Version>2.1.0.0</Version>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <Version>2.1.1.0</Version>
+    <AssemblyVersion>2.1.1.0</AssemblyVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Dime</Authors>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
