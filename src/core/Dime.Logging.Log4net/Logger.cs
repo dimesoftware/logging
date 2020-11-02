@@ -20,7 +20,6 @@ namespace Dime.Logging
             _log = LogManager.GetLogger(name);
         }
 
-
         [DebuggerStepThrough]
         public void Debug(string message)
             => ThreadPool.QueueUserWorkItem(task => _log.Debug(message));
@@ -111,7 +110,6 @@ namespace Dime.Logging
                 _log.Error(message, ex);
             });
         }
-
 
         [DebuggerStepThrough]
         public void Fatal(string message, Exception ex)

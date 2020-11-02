@@ -10,9 +10,9 @@ namespace Dime.Logging
         protected override void Convert(TextWriter writer, LoggingEvent loggingEvent)
         {
             HttpContext context = HttpContext.Current;
-            
+
             string name = "";
-            if (context?.User != null && context.User.Identity.IsAuthenticated) 
+            if (context?.User != null && context.User.Identity.IsAuthenticated)
                 name = context.User.Identity.Name;
 
             writer.Write(name);

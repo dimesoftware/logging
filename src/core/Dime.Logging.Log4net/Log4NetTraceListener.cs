@@ -13,11 +13,11 @@ namespace Dime.Logging
         private ILogger Logger { get; }
 
         [DebuggerStepThrough]
-        public override void Write(string message) 
+        public override void Write(string message)
             => Logger.Debug(message, "TRACE");
 
         [DebuggerStepThrough]
-        public override void WriteLine(string message) 
+        public override void WriteLine(string message)
             => Logger.Debug(message, "TRACE");
     }
 }

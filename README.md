@@ -1,4 +1,8 @@
-# Introduction
+<center>
+ <img src="assets/collect.svg" width="250" />
+</center>
+
+# Dime.Logging
 
 Dime.Logging is a simple wrapper which abstracts logging implementations from logging definitions.
 
@@ -28,10 +32,10 @@ Use the package manager NuGet to install Dime.Logging:
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 
-Please make sure to update tests as appropriate.
+Pull requests are welcome. Please check out the contribution and code of conduct guidelines.
 
 ## License
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
