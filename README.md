@@ -1,6 +1,4 @@
-<center>
- <img src="assets/collect.svg" width="250" />
-</center>
+<p align="center"><img src="assets/collect.svg?raw=true" width="350" alt="Logo"></p>
 
 # Dime.Logging
 
