@@ -17,7 +17,7 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
     <Authors>Dime</Authors>
-    <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
+    <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageTags>Dime; Logging</PackageTags>

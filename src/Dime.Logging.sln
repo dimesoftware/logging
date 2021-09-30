@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging", "core\Dime.L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging.Log4Net", "core\Dime.Logging.Log4Net\Dime.Logging.Log4Net.csproj", "{55AE1B0F-1793-4335-90A3-495D2957FA3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Logging.Log4Net.AspNet", "core\Dime.Logging.Log4Net.AspNet\Dime.Logging.Log4Net.AspNet.csproj", "{B11EEEF7-C910-452D-9C9A-E2A6D1DB8070}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Logging.Log4Net.AspNet", "core\Dime.Logging.Log4Net.AspNet\Dime.Logging.Log4Net.AspNet.csproj", "{B11EEEF7-C910-452D-9C9A-E2A6D1DB8070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
