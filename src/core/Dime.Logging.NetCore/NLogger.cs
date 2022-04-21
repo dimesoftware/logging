@@ -4,6 +4,7 @@ namespace Dime.Logging
 {
     public class NLogger : ILogger
     {
+        private const string Message = $"{MessageTemplates.Message} {MessageTemplates.Category}";
         private readonly ILogger<NLogger> _logger;
 
         public NLogger(ILogger<NLogger> logger)
@@ -11,55 +12,52 @@ namespace Dime.Logging
             _logger = logger;
         }
 
-        private static string CategoryMessageTemplate => "[{category}]";
-        private static string MessageTemplate => "{message}";
-
         public void Debug(string message)
-            => _logger.LogDebug(message);
+            => _logger.LogDebug(MessageTemplates.Message, message);
 
         public void Debug(string message, string category)
-            => _logger.LogDebug($"{message} {CategoryMessageTemplate}", category);
+            => _logger.LogDebug(Message, message, category);
 
         public void Debug(string message, Exception ex)
-            => _logger.LogDebug(ex, message);
+            => _logger.LogDebug(ex, MessageTemplates.Message, message);
 
         public void Debug(string message, string category, Exception ex)
-            => _logger.LogDebug($"{message} {CategoryMessageTemplate}", category, ex);
+            => _logger.LogDebug(ex, Message, message, category);
 
         public void Information(string message)
-            => _logger.LogInformation(message);
+            => _logger.LogInformation(MessageTemplates.Message, message);
 
         public void Information(string message, string category)
-            => _logger.LogInformation($"{MessageTemplate} {CategoryMessageTemplate}", message, category);
+            => _logger.LogInformation(Message, message, category);
 
         public void Warning(string message)
-            => _logger.LogWarning(message);
+            => _logger.LogWarning(MessageTemplates.Message, message);
 
         public void Warning(bool condition, string message)
         {
             if (condition)
-                _logger.LogWarning(message);
+                _logger.LogWarning(MessageTemplates.Message, message);
         }
 
         public void Warning(string message, string category)
-            => _logger.LogWarning($"{message} {CategoryMessageTemplate}", category);
+            => _logger.LogWarning(Message, message, category);
 
         public void Warning(string message, Exception ex)
-            => _logger.LogWarning(ex, message);
+            => _logger.LogWarning(ex, MessageTemplates.Message, message);
 
         public void Warning(string message, string category, Exception ex)
-            => _logger.LogWarning(ex, $"{message} {CategoryMessageTemplate}", category);
+            => _logger.LogWarning(ex, Message, message, category);
 
         public void Exception(string message, Exception ex)
-            => _logger.LogError(ex, message);
+            => _logger.LogError(ex, MessageTemplates.Message, message);
 
         public void Exception(string message, string category, Exception ex)
-            => _logger.LogError(ex, $"{message} {CategoryMessageTemplate}", category);
+            => _logger.LogError(ex, Message, message, category);
 
         public void Fatal(string message, Exception ex)
-            => _logger.LogCritical(ex, message);
+            => _logger.LogCritical(ex, MessageTemplates.Message, message);
 
         public void Fatal(string message, string category, Exception ex)
-            => _logger.LogCritical($"{message} {CategoryMessageTemplate}", category, ex);
+            => _logger.LogCritical(ex, Message, message, category);
     }
 }
