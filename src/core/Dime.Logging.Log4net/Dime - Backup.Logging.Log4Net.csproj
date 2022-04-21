@@ -17,8 +17,8 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
     <Authors>Dime</Authors>
-    <RepositoryUrl>https://github.com/dimenics/logging</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/dimenics/logging</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dime-software/logging</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dime-software/logging</PackageProjectUrl>
     <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
     <PackageTags>Dime; Logging</PackageTags>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dime.Logging\Dime.Logging.csproj" />

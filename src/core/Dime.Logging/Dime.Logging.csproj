@@ -12,7 +12,7 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Dime</Authors>
     <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
-    <PackageProjectUrl>http://www.dimenics.com</PackageProjectUrl>
+    <PackageProjectUrl>http://www.dime-software.com</PackageProjectUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageTags>Dimenics; Logging</PackageTags>
   </PropertyGroup>
