@@ -1,3 +1,9 @@
+<div align="center">
+  <h1>⚠️ This project is no longer maintained ⚠️</h1>
+  <p>Use the capabilities of <b>Microsoft.Extensions.Logging</b> instead.</p>
+</div>
+
+<br/> 
 <p align="center"><img src="assets/collect.svg?raw=true" width="350" alt="Logo"></p>
 
 <div align="center">
